@@ -30,17 +30,15 @@
     <?= $this->Form->button(__('Submit')) ?>
     <?= $this->Form->end() ?>
 </div>
-<!--<script type = "text/javascript" >  
-	var editor = CKEDITOR.replace('ckeditor');
-</script> -->
+
 <script type="text/javascript">
 	CKEDITOR.plugins.addExternal( 'abbr', '/myplugins/abbr/', 'plugin.js' );
 	CKEDITOR.replace('newsContent',
 	{
-		filebrowserBrowseUrl: '/ck_editor/webroot/js/ckfinder/ckfinder.html',
-		filebrowserImageBrowseUrl: '/ck_editor/webroot/js/ckfinder/ckfinder.html?type=Images',
-		filebrowserUploadUrl: '/ck_editor/webroot/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files&currentFolder=/archive/',
-		filebrowserImageUploadUrl: '/ck_editor/webroot/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images&currentFolder=/cars/'
+		filebrowserBrowseUrl: '/cakephp-3.8-ckeditor-And-ckfinder/webroot/js/ckfinder/ckfinder.html',
+		filebrowserImageBrowseUrl: '/cakephp-3.8-ckeditor-And-ckfinder/webroot/js/ckfinder/ckfinder.html?type=Images',
+		filebrowserUploadUrl: '/cakephp-3.8-ckeditor-And-ckfinder/webroot/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files&currentFolder=/archive/',
+		filebrowserImageUploadUrl: '/cakephp-3.8-ckeditor-And-ckfinder/webroot/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images&currentFolder=/cars/'
 	});
 
 </script>
